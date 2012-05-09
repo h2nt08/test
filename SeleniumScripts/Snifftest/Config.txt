@@ -60,6 +60,7 @@ All infomation below is in TESTVN-4764:
 
 
 
+//div[@class='UIAction']/a[1]
 
 
 

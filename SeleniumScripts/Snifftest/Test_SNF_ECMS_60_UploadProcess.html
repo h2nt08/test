@@ -97,6 +97,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-- Upload holiday process</td>
 	<td></td>
@@ -113,21 +118,6 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-- Fill name</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=name</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=name</td>
-	<td>Holiday</td>
-</tr>
-<tr>
-	<td>echo</td>
 	<td>-- Choose file</td>
 	<td></td>
 </tr>
@@ -139,7 +129,32 @@
 <tr>
 	<td>typeAndWait</td>
 	<td>id=file</td>
-	<td>/home/hakt/exo-ecms-ext-workflow-bp-jbpm-holiday-2.3.5.jar</td>
+	<td>/home/hainh/java/exo-working/PLF-353/Platform-tomcat-3.5.3-SNAPSHOT/tomcat-bundle/lib/exo-ecms-ext-workflow-bp-jbpm-holiday-2.3.7-SNAPSHOT.jar</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Fill name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>process holiday</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -154,6 +169,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
