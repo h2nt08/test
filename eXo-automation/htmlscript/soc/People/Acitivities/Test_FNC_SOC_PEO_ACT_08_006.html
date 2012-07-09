@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
+<title>Test_FNC_SOC_PEO_ACT_08_006</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_FNC_SOC_PEO_ACT_08_006</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_08_006 Add new activities with special chars ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login as John</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* Create a user.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Sol Campbell user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>campbell23</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Confirmpassword</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>Sol</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Campbell</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>campbell@exoplatform.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out: John</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>campbell23</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login as Sol Campbell</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Activity Streams</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Enter some text with special chars</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>~!@#$%^&amp;*()_+=-`&lt;&gt;?/外部配置</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_006.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_006.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:~!@#$%^&amp;*()_+=-`&lt;&gt;?/外部配置</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:~!@#$%^&amp;*()_+=-`&lt;&gt;?/外部配置</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_08_007 Add new activities without any text ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Enter some text with special chars</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The message is empty.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The message is empty.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_007.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_007.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_08_008 Add new activities with unlimited chars ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Enter some text with special chars</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>Add new activities with unlimited char</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_008.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_008.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add new activities with unlimited char</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Add new activities with unlimited char</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_08_009 Add new activity without click on Add button ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>Add new activity without click on Add button</td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>id=composerInput</td>
+	<td>s</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Don't click Share button and select My Status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=My Status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_009.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_009.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Add new activity without click on Add button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Add new activity without click on Add button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_08_010 Add new activities with HTML tag ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check with&nbsp;&nbsp;AllowedTag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| a tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;a href=&quot;http://www.w3schools.com&quot;&gt;Visit W3Schools.com!&lt;/a&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img01.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img01.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| b,i tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;tt&gt;Teletype text&lt;/tt&gt; &lt;i&gt;Italic text&lt;/i&gt; &lt;b&gt;Bold text&lt;/b&gt; &lt;big&gt;Big text&lt;/big&gt; &lt;small&gt;Small text&lt;/small&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img02.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img02.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| span, em, p, strong&nbsp;&nbsp;tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;strong&gt;Strong text&lt;/strong&gt; &lt;em&gt;Emphasized text&lt;/em&gt;&nbsp;&nbsp;&lt;p&gt;My mother has &lt;span style=&quot;color:lightblue&quot;&gt;light blue&lt;/span&gt;&nbsp;&nbsp;eyes.&lt;/p&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img03.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img03.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| ol, li&nbsp;&nbsp;&nbsp;tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;ol&gt;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tea&lt;/li&gt;&nbsp;&nbsp;&nbsp;&lt;li&gt;Milk&lt;/li&gt; &lt;/ol&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img04.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img04.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| ul&nbsp;&nbsp;&nbsp;tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;ul&gt;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tea&lt;/li&gt;&nbsp;&nbsp;&nbsp;&lt;li&gt;Milk&lt;/li&gt; &lt;/ul&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img05.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img05.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| br&nbsp;&nbsp;tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>This text contains&lt;br /&gt;a line break.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img06.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img06.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| img(src)&nbsp;&nbsp;tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;img src=&quot;http://www.w3schools.com/images/compatible_firefox.gif&quot; alt=&quot;FF&quot; height=&quot;42&quot; width=&quot;42&quot; /&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img07.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img07.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| blockquote tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;blockquote&gt; Here is a long quotation here is a long quotation here is a long quotation here is a long quotation here is a long quotation here is a long quotation here is a long quotation here is a long quotation here is a long quotation. &lt;/blockquote&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img08.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img08.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| q tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;p&gt;WWF's goal is to:&nbsp;&nbsp;&lt;q&gt;build a future where people live in harmony with nature&lt;/q&gt;. We hope they succeed.&lt;/p&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_010img09.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_010img09.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_08_011 Add new activities with other HTML tag or script tag ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- alert(&quot;I am an alert box!&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>alert(&quot;I am an alert box!&quot;);</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- alert(&quot;I am an alert box!&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>javascripts{alert(&quot;I am an alert box!&quot;);}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Another scripts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>&lt;html&gt; &lt;head&gt; &lt;script type=&quot;text/javascript&quot;&gt; function show_alert() { alert(&quot;I am an alert box!&quot;); } &lt;/script&gt; &lt;/head&gt; &lt;body&gt;&nbsp;&nbsp;&lt;input type=&quot;button&quot; onclick=&quot;show_alert()&quot; value=&quot;Show alert box&quot; /&gt;&nbsp;&nbsp;&lt;/body&gt; &lt;/html&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_08_011.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_08_011.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
+<title>Test_FNC_SOC_PEO_RLT_13_001</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_FNC_SOC_PEO_RLT_13_001</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create a user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>vassiriki2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>somedayyouandme</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Confirmpassword</td>
+	<td>somedayyouandme</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>Vassiriki</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Diaby</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>vassiriki@agian.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out: Root</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>vassiriki2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>somedayyouandme</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login as Vassiriki Diaby</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- My Network</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Connections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Connections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_13_001.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_13_001.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_RLT_14_001 Search when text box search is blank++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Everyone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Everyone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Everyone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search field is blank</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_14_001.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_14_001.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_RLT_14_002 Search when input some text in text box&nbsp;&nbsp;search ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search with random text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Search</td>
+	<td>jhgfrdswfgdfg</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_14_002img01.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_14_002img01.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search Mary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Search</td>
+	<td>Mary</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_14_002img02.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_14_002img02.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Mary Williams</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_RLT_14_003 SSearch when input “*” char into text box search ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type * character</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Search</td>
+	<td>*</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_14_003.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_14_003.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_RLT_14_004 Search when input Percentage char into text box search ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type % character</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Search</td>
+	<td>%</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_14_004.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_14_004.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_RLT_14_005 Search when there is some space into text box ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type $ character</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Search</td>
+	<td>$</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; FNC_SOC_PEO_RLT_14_005.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Connections/FNC_SOC_PEO_RLT_14_005.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

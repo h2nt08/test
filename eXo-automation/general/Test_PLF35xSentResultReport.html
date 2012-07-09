@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://ci.exoplatform.org/" />
+<title>Test_CreatFolderReportFollowRev</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_CreatFolderReportFollowRev</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[text()='log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//b[text()='log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>j_username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>j_username</td>
+	<td>hainh</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>j_password</td>
+	<td>zaq12wsx</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[text()='log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- § Projects §</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=§ Projects §</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=§ Projects §</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose platform-trunk-pkg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=platform3.5.x-pkg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=platform-3.5.x-pkg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Recent Changes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Recent Changes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Recent Changes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Store Rev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td[@id='main-panel']//li[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//td[@id='main-panel']//li[1]@value</td>
+	<td>newsetRev</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Get date current</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>now = new Date(); now.getFullYear();</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>now = new Date(); months=now.getMonth()+1; if (months&lt;10){months=&quot;0&quot;+months};</td>
+	<td>Month</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>now = new Date(); dates=now.getDate();if (dates&lt;10){dates=&quot;0&quot;+dates};</td>
+	<td>Date</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Year + Month + Date</td>
+	<td>currentday</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>now = new Date(); hh=now.getHours();if (hh&lt;10){hh=&quot;0&quot;+hh};</td>
+	<td>hh</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>now = new Date(); mm=now.getMinutes();if (mm&lt;10){hh=&quot;0&quot;+mm};</td>
+	<td>mm</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>hh + mm</td>
+	<td>hhmm</td>
+</tr>
+<tr>
+	<td>createFolderReportSOC</td>
+	<td>currentday</td>
+	<td>newsetRev</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//b[text()='log out']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* http://builder2.testlab1.exoplatform.vn/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://builder2.testlab1.exoplatform.vn/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td[@id='login-field']/span/a/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[@id='login-field']/span/a/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>j_username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>j_username</td>
+	<td>linh_vu</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>j_password</td>
+	<td>YghuBei</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- eXoSocial-1.2.x</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=eXoSocial-1.2.x</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=eXoSocial-1.2.x</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Selenium-sniff-platform-trunk-pkg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Selenium-sniff-platform-trunk-pkg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Selenium-sniff-platform-trunk-pkg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Workspace</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Workspace</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Workspace</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Target</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=target</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=target</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Tests.exoplatform.org</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=tests.exoplatform.org</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=tests.exoplatform.org</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Get name of Sure-fire report: 2second</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=SeleniumReport*.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>link=SeleniumReport-*.html</td>
+	<td>NameReport</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SeleniumReport-*.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Name report is ${NameReport}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='contentBox']/div[2]/table/tbody/tr[2]/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='contentBox']/div[2]/table/tbody/tr[2]/td[1]</td>
+	<td>Tests</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Get Totals testcase : ${Tests}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='contentBox']/div[2]/table/tbody/tr[2]/td[2]</td>
+	<td>Errors</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Get number Errors: ${Errors}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='contentBox']/div[2]/table/tbody/tr[2]/td[3]</td>
+	<td>Failures</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Get number Failures: ${Failures}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='contentBox']/div[2]/table/tbody/tr[2]/td[5]</td>
+	<td>SuccessRate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Get number Success Rate: ${SuccessRate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Copy report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>copySOCreport</td>
+	<td>NameReport</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://builder2.testlab1.exoplatform.vn/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* Content in email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Jenkins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Jenkins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Jenkins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- eXoSocial-1.2.x</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=eXoSocial-1.2.x</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=eXoSocial-1.2.x</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Commit-soc-report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Commit-soc-report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Commit-soc-report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Configure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Configure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Configure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Email title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=project_default_subject</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=project_default_subject</td>
+	<td>SOC 1.2.X-SNAPSHOT - TOMCAT : Success=${SuccessRate} -Err=${Errors}/${Tests} -F=${Failures}/${Tests}&nbsp;&nbsp;in ${Month}/${Date}/${Year}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>- Type content in email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>project_default_content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>project_default_content</td>
+	<td>Detail report :<br /> https://qaf-reports.exoplatform.org/reports/DailyReports/SOC/1.2.8-SNAPSHOT/rev${newsetRev}/${currentday}/${NameReport} <br /> * SOC : <br /> -- Sniff <br /> -- People <br /> -- Space <br /> -- UserStories <br /> -- Smoke</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[text()='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[text()='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>Report daily was send by selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[type=button]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[text()='log out']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//b[text()='log out']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

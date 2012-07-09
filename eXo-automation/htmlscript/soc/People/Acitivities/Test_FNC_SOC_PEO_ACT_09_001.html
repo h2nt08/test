@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
+<title>Test_FNC_SOC_PEO_ACT_09_001</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_FNC_SOC_PEO_ACT_09_001</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_001 Add a share link ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login as John</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* Create a user.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--&nbsp;&nbsp;Emmanuel Eboue user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>emmanuel27</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Confirmpassword</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>Eboue</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Emmanuel</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>emmanuel@exoplatform.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out: John</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>emmanuel27</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login as&nbsp;&nbsp;Emmanuel Eboue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Activity Streams</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>http://www.w3schools.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_003 View Link shared without thumbnail ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify not check Thumbnail check box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotChecked</td>
+	<td>id=ThumbnailCheckbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>Good site for study</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify share a link successful</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_001.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_001.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_003.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_003.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=W3Schools Online Web Tutorials</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Good site for study</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_002 Add new Share link without text on activity ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>http://en.wikipedia.org/wiki/Main_Page</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Not Type comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Share</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify share a link successful</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_002.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_002.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Wikipedia, the free encyclopedia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_003 View Link shared without thumbnail ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>http://www.w3schools.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=composerInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=composerInput</td>
+	<td>Check No thumbnail.</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check No thumbnail.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ThumbnailCheckbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ThumbnailCheckbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_04img01.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_004img01.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_04img02.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_004img02.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_005 Add a share link without Enter or click Add button on share link form ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>http://www.google.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Attach Button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Activity Streams</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_05.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_005.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_006 Add a share link without click&nbsp;&nbsp;Attach ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>http://www.google.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Not Attach and select My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Activity Streams</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_06.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_006.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_007 Add a share link with url is not correct form ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>googles</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Attach Button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_07.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_007.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>A problem occured when sharing this link. Please make sure to input a valid url.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_008 Share link with empty link ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Attach Button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_08.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_008.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>++ FNC_SOC_PEO_ACT_09_008 Share link with URL is not exited ++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type a link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InputLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InputLink</td>
+	<td>http://www.w6schsdfsdf.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AttachButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ShareButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; Test_FNC_SOC_PEO_ACT_09_09.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/People/Activities/Test_FNC_SOC_PEO_ACT_09_009.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=exact:http://www.w6schsdfsdf.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

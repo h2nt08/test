@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_SOC_27_ViewUserProfile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_SOC_27_ViewUserProfile</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* View Friend Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login as root</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new user using &quot;New Staff&quot; portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>tigon</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test_pwd_27</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>test_pwd_27</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>Hang</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>TestPro</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>tigonhang@gmail.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Enter information in User Profile tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=user.name.given</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.name.given</td>
+	<td>Villa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.name.family</td>
+	<td>Salager</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.name.nickName</td>
+	<td>tigon</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.bdate</td>
+	<td>12 - Nov - 1999</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=user.gender</td>
+	<td>label=Female</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.employer</td>
+	<td>Tester</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.department</td>
+	<td>QA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.jobtitle</td>
+	<td>Tester</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=user.language</td>
+	<td>label=English</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| Home Info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Home Info']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Home Info']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=user.home-info.postal.name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.postal.name</td>
+	<td>32</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.postal.street</td>
+	<td>ninh binh</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.postal.city</td>
+	<td>hanoi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.postal.stateprov</td>
+	<td>danang</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.postal.postalcode</td>
+	<td>08432</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.postal.country</td>
+	<td>vietnam</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.telecom.mobile.number</td>
+	<td>09999999879</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.telecom.telephone.number</td>
+	<td>049840384</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.online.email</td>
+	<td>hangthuy@exoplatform.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.home-info.online.uri</td>
+	<td>http://muaban.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--| Business Info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Business Info']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Business Info']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.postal.name</td>
+	<td>90</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.postal.city</td>
+	<td>yenbai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.postal.stateprov</td>
+	<td>laocai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.postal.postalcode</td>
+	<td>89742</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.postal.country</td>
+	<td>Vietnam</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.telecom.mobile.number</td>
+	<td>89470948098</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.telecom.telephone.number</td>
+	<td>983738403948</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.online.email</td>
+	<td>hanghang@hang.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.business-info.online.uri</td>
+	<td>http://choidep.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.PopupContent.UIPopupMessages &gt; div.UIAction &gt; a.ActionButton.LightBlueStyle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.PopupContent.UIPopupMessages &gt; div.UIAction &gt; a.ActionButton.LightBlueStyle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout: Root</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Update Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>tigon</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test_pwd_27</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Update Position</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>position</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>position</td>
+	<td>eXo Tester</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Update Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UIContactSection']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='UIContactSection']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>gender</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>gender</td>
+	<td>male</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>1phone001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>1phone001</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='UIContactSection']//table[@class='UIFormGrid']/tbody/tr[3]//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Update IM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>2im001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>2im001</td>
+	<td>eXo_Test_27</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UIContactSection']//table[@class='UIFormGrid']/tbody/tr[4]//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='UIContactSection']//table[@class='UIFormGrid']/tbody/tr[4]//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>3url001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>3url001</td>
+	<td>http://www.google.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Update Experiences</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='experience']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='experience']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='experience']//table[@class='UIFormGrid']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='experience']//table[@class='UIFormGrid']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//td[2]/input</td>
+	<td>eXo Sea</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//tr[2]/td[2]/input</td>
+	<td>Tester eXo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=startDate1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* SOC-1344:&nbsp;&nbsp;fixed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>==&gt; SNF_SOC_27.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ImgPLF/SOC/Sniff/SNF_SOC_27.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- View Friend profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>demo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=UIPortalLoginFormAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Find Connections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Find Connections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Hang TestPro</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Hang TestPro</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>tigon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>tigon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>tigonhang@gmail.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
