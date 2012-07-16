@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_FNC_ECMS_FEX_ACTION_01_018_CopyFolderToNodeThatUserDoesNotAddRight</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_FNC_ECMS_FEX_ACTION_01_018_CopyFolderToNodeThatUserDoesNotAddRight</td></tr>
+</thead><tbody>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to acme site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/acme</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to site explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select root path</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Sites Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create Content Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>createNewContentFolder</td>
+	<td>FNC_ECMS_FEX_ACTION_01_018_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>createNewContentFolder</td>
+	<td>FNC_ECMS_FEX_ACTION_01_018_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Set permission for folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Permissions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Permissions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@title='*:/platform/web-contributors']/following::div/img[@title='Remove Permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='*:/platform/web-contributors']/following::div/img[@title='Remove Permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this permission?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>mary</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to site explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Copy folder1 to folder2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Copy')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Copy')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Paste to folder2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Paste')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Paste')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You do not have permission to paste to this node. Please contact the administrator to get the correct right.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You do not have permission to paste to this node. Please contact the administrator to get the correct right.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to site explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete folder1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete folder2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search folders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_1</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>link=FNC_ECMS_FEX_ACTION_01_018_2</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

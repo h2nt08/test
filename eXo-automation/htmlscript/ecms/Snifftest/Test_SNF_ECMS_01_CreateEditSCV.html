@@ -44,7 +44,7 @@
 <tr>
 	<td>type</td>
 	<td>username</td>
-	<td>root</td>
+	<td>john</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -97,13 +97,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
-	<td>//div[@id='UIPageNodeSelector']/div/div/div[2]/div/div/div/div[1]/a</td>
+	<td>//div[@class='HomeNode']/a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UIPageNodeSelector']/div/div/div[2]/div/div/div/div[1]/a</td>
+	<td>//div[@class='HomeNode']/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -137,6 +142,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-- Click Next again</td>
 	<td></td>
@@ -152,18 +162,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-- Select Content module</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Contents</td>
+	<td>link=Content</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Contents</td>
+	<td>link=Content</td>
 	<td></td>
 </tr>
 <tr>
@@ -353,22 +368,22 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-- Verify title page</td>
+	<td>-------------------- Verify title page ---------------------------------</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>//div[@title='offices.jpg']</td>
+	<td>//div[@class='Title']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//div[@title='offices.jpg']</td>
+	<td>//div[@class='Title']</td>
 	<td>offices.jpg</td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>30000</td>
 	<td></td>
 </tr>
 <tr>
@@ -533,12 +548,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>css=a.SaveButton</td>
+	<td>//div[@class='OverflowContainer ClearFix']/a[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=a.SaveButton</td>
+	<td>//div[@class='OverflowContainer ClearFix']/a[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -558,7 +573,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>30000</td>
 	<td></td>
 </tr>
 <tr>

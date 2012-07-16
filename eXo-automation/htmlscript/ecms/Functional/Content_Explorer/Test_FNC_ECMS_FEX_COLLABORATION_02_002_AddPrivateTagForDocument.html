@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_FNC_ECMS_FEX_COLLABORATION_02_002_AddPrivateTagForDocument</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_FNC_ECMS_FEX_COLLABORATION_02_002_AddPrivateTagForDocument</td></tr>
+</thead><tbody>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to acme site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/acme</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>createNewArticle</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_002,FNC_ECMS_FEX_COLLABORATION_02_002</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Collaboration tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click on Tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Put tag's name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='names']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='names']</td>
+	<td>Private tag1</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close Tag form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify that created tag is displayed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_002 ']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_002 ']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--- verify that can edit and delete tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>mary</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- verify that cannot see created private tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Remove tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this tag?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close tag form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Back to Site Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_002</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search to verify that document is not existing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_002</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

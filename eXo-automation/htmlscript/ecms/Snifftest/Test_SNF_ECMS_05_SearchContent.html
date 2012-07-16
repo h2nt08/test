@@ -133,31 +133,36 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Add Content</td>
+	<td>link=New Content</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Add Content</td>
+	<td>link=New Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- create Announcement</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//div[@id='UISelectDocumentForm']/div/div[2]/div[2]/div/div/div/div</td>
+	<td>//div[@title='Article']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UISelectDocumentForm']/div/div[2]/div[2]/div/div/div/div</td>
+	<td>//div[@title='Article']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Title</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>id=title</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>id=title</td>
 	<td></td>
 </tr>
@@ -187,9 +192,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>//html/body</td>
-	<td>I hate myself for loving you</td>
+	<td>this is summary Test_SNF_ECMS_05</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -202,13 +217,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
+	<td>typeKeys</td>
 	<td>//html/body</td>
-	<td>Em yeu chi ! Tieu Huong Duong</td>
+	<td>this is content Test_SNF_ECMS_05</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -373,12 +393,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Manage Publications</td>
+	<td>link=Publications</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Manage Publications</td>
+	<td>link=Publications</td>
 	<td></td>
 </tr>
 <tr>
@@ -418,12 +438,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>css=a.PreviousMonth</td>
+	<td>//td[@class='MonthButton']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=a.PreviousMonth</td>
+	<td>//td[@class='MonthButton']</td>
 	<td></td>
 </tr>
 <tr>
@@ -508,12 +528,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Manage Publications</td>
+	<td>link=Publications</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Manage Publications</td>
+	<td>link=Publications</td>
 	<td></td>
 </tr>
 <tr>
@@ -569,7 +589,7 @@
 <tr>
 	<td>type</td>
 	<td>username</td>
-	<td>root</td>
+	<td>john</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -604,7 +624,7 @@
 <tr>
 	<td>type</td>
 	<td>keyword</td>
-	<td>Test_SNF_ECMS_05</td>
+	<td>Test</td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -628,7 +648,7 @@
 </tr>
 <tr>
 	<td>captureEntirePageScreenshot</td>
-	<td>/home/ImgPLF/ECMS/Sniff/SNF_ECMS_05img01.png</td>
+	<td>/home/hainh/SNF_ECMS_05img01.png</td>
 	<td></td>
 </tr>
 <tr>
@@ -653,23 +673,23 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>//div[@id='UIPresentation']/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div/p</td>
-	<td>I hate myself for loving you</td>
+	<td>//div[@class='LabelContent']</td>
+	<td>Sumary is empty</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//div[@id='UIPresentation']/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div/p</td>
-	<td>I hate myself for loving you</td>
+	<td>//div[@class='LabelContent']</td>
+	<td>Summary is empty</td>
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>//div[@id='UIPresentation']/div/div[2]/div/div/div[3]/div[2]/div/div/div/div[1]/div/p</td>
-	<td>Em yeu chi ! Tieu Huong Duong</td>
+	<td>//div[@class='LabelContent']/p</td>
+	<td>this is content Test_SNF_ECMS_05</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//div[@id='UIPresentation']/div/div[2]/div/div/div[3]/div[2]/div/div/div/div[1]/div/p</td>
-	<td>Em yeu chi ! Tieu Huong Duong</td>
+	<td>//div[@class='LabelContent']/p</td>
+	<td>this is content Test_SNF_ECMS_05</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>

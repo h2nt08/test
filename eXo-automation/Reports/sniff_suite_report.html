@@ -1,0 +1,553 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>77</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">Test_SNF_ECMS_30_Vote</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">Test_SNF_ECMS_30_Vote.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_SNF_ECMS_16_FormGenerator_ecmdemo</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/public/acme/</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>* Log in</td>
+	<td>* Log in</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>* Create Article in&nbsp;&nbsp;Sites management/ acme</td>
+	<td>* Create Article in  Sites management/ acme</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click Show Drives</td>
+	<td>-- Click Show Drives</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[@title= 'Show Drives']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[@title= 'Show Drives']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose link=Sites Management</td>
+	<td>-- Choose link=Sites Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose acme</td>
+	<td>-- Choose acme</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a[title="acme "]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a[title="acme "]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click Add Content</td>
+	<td>-- Click Add Content</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=New Content</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=New Content</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Article template</td>
+	<td>-- Choose Article template</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Article']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@title='Article']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=title</td>
+	<td>Test_SNF_ECMS_30</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=name</td>
+	<td>Test_SNF_ECMS_30</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td[@id='cke_contents_summary']/iframe</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectFrame</td>
+	<td>//td[@id='cke_contents_summary']/iframe</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//html/body</td>
+	<td>Summary Test_SNF_ECMS_30</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td[@id='cke_contents_content']/iframe</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectFrame</td>
+	<td>//td[@id='cke_contents_content']/iframe</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//html/body</td>
+	<td>Content Test_SNF_ECMS_30</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save &amp; Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save &amp; Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>* Vote</td>
+	<td>* Vote</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Collaboration tab</td>
+	<td>-- Go to Collaboration tab</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Vote For Document</td>
+	<td>-- Click on Vote For Document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Vote</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Vote</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose 5 stars</td>
+	<td>-- Choose 5 stars</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIVoteForm']/div/div/div/div[5]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIVoteForm']/div/div/div/div[5]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--&nbsp;&nbsp;Verify&nbsp;&nbsp;Avg. Rating</td>
+	<td>--  Verify  Avg. Rating</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Avg. Rating: ']/following-sibling::div[text()='5.0']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Avg. Rating: ']/following-sibling::div[text()='5.0']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--&nbsp;&nbsp;Verify&nbsp;&nbsp;Vote times</td>
+	<td>--  Verify  Vote times</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Votes: ']/following-sibling::div[text()='1']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Votes: ']/following-sibling::div[text()='1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>* Delete document</td>
+	<td>* Delete document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_ECMS_30</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>mouseDownRight</td>
+	<td>link=Test_SNF_ECMS_30</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>* Log out</td>
+	<td>* Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/Test_SNF_ECMS_30_Vote.html
+info: Executing: |setSpeed | 500 |  |
+info: Executing: |open | /portal/public/acme/ |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |echo | * Log in |  |
+info: Executing: |waitForElementPresent | link=Login |  |
+info: Executing: |click | link=Login |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | root |
+info: Executing: |type | password | gtn |
+info: Executing: |waitForElementPresent | link=Sign in |  |
+info: Executing: |clickAndWait | link=Sign in |  |
+info: Executing: |echo | * Create Article in  Sites management/ acme |  |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |waitForElementPresent | link=Sites Explorer |  |
+info: Executing: |clickAndWait | link=Sites Explorer |  |
+info: Executing: |echo | -- Click Show Drives |  |
+info: Executing: |waitForElementPresent | //a[@title= &apos;Show Drives&apos;] |  |
+info: Executing: |click | //a[@title= &apos;Show Drives&apos;] |  |
+info: Executing: |echo | -- Choose link=Sites Management |  |
+info: Executing: |waitForElementPresent | link=Sites Management |  |
+info: Executing: |click | link=Sites Management |  |
+info: Executing: |echo | -- Choose acme |  |
+info: Executing: |waitForElementPresent | css=a[title=&quot;acme &quot;] |  |
+info: Executing: |click | css=a[title=&quot;acme &quot;] |  |
+info: Executing: |echo | -- Click Add Content |  |
+info: Executing: |waitForElementPresent | link=New Content |  |
+info: Executing: |click | link=New Content |  |
+info: Executing: |echo | -- Choose Article template |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Article&apos;] |  |
+info: Executing: |click | //div[@title=&apos;Article&apos;] |  |
+info: Executing: |waitForElementPresent | id=title |  |
+info: Executing: |click | id=title |  |
+info: Executing: |waitForElementPresent | id=title |  |
+info: Executing: |type | id=title | Test_SNF_ECMS_30 |
+info: Executing: |waitForElementPresent | id=name |  |
+info: Executing: |type | id=name | Test_SNF_ECMS_30 |
+info: Executing: |waitForElementPresent | //td[@id=&apos;cke_contents_summary&apos;]/iframe |  |
+info: Executing: |selectFrame | //td[@id=&apos;cke_contents_summary&apos;]/iframe |  |
+info: Executing: |type | //html/body | Summary Test_SNF_ECMS_30 |
+info: Executing: |selectFrame | relative=top |  |
+info: Executing: |waitForElementPresent | //td[@id=&apos;cke_contents_content&apos;]/iframe |  |
+info: Executing: |selectFrame | //td[@id=&apos;cke_contents_content&apos;]/iframe |  |
+info: Executing: |type | //html/body | Content Test_SNF_ECMS_30 |
+info: Executing: |selectFrame | relative=top |  |
+info: Executing: |waitForElementPresent | link=Save &amp; Close |  |
+info: Executing: |click | link=Save &amp; Close |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | * Vote |  |
+info: Executing: |echo | -- Go to Collaboration tab |  |
+info: Executing: |waitForElementPresent | link=Collaboration |  |
+info: Executing: |click | link=Collaboration |  |
+info: Executing: |echo | -- Click on Vote For Document |  |
+info: Executing: |waitForElementPresent | link=Vote |  |
+info: Executing: |click | link=Vote |  |
+info: Executing: |echo | -- Choose 5 stars |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIVoteForm&apos;]/div/div/div/div[5] |  |
+info: Executing: |click | //div[@id=&apos;UIVoteForm&apos;]/div/div/div/div[5] |  |
+info: Executing: |echo | --  Verify  Avg. Rating |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Avg. Rating: &apos;]/following-sibling::div[text()=&apos;5.0&apos;] |  |
+info: Executing: |verifyElementPresent | //div[text()=&apos;Avg. Rating: &apos;]/following-sibling::div[text()=&apos;5.0&apos;] |  |
+info: Executing: |echo | --  Verify  Vote times |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Votes: &apos;]/following-sibling::div[text()=&apos;1&apos;] |  |
+info: Executing: |verifyElementPresent | //div[text()=&apos;Votes: &apos;]/following-sibling::div[text()=&apos;1&apos;] |  |
+info: Executing: |echo | * Delete document |  |
+info: Executing: |waitForElementPresent | link=Test_SNF_ECMS_30 |  |
+info: Executing: |mouseDownRight | link=Test_SNF_ECMS_30 |  |
+info: Executing: |waitForElementPresent | link=Delete |  |
+info: Executing: |click | link=Delete |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | * Log out |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+</pre></body></html>
