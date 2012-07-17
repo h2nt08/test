@@ -1,7 +1,7 @@
 var ecms = {};
 var speed = 500;
 ecms.login = function login (username, password) {
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
 //    alert("testtest");
     aWait("link=Login");
     selenium.doClick("link=Login");
@@ -13,7 +13,7 @@ ecms.login = function login (username, password) {
 
 // Create new Folder content
 ecms.CreateNewContentFolder = function CreateNewContentFolder (foldername){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
      aWait("link=New Folder");
      selenium.doClick("link=New Folder");
      aWait("name=type");
@@ -26,7 +26,7 @@ ecms.CreateNewContentFolder = function CreateNewContentFolder (foldername){
 
 // Create new Document content
 ecms.CreateNewDocumentFolder = function CreateNewDocumentFolder (foldername){
-     selenium.setSpeed(speed);
+     selenium.doSetSpeed(speed);
      wait("link=New Folder");
      selenium.doClick("link=New Folder");
      aWait("name=type");
@@ -38,7 +38,7 @@ ecms.CreateNewDocumentFolder = function CreateNewDocumentFolder (foldername){
 
 // create new article
 ecms.CreateNewArticle = function CreateNewArticle (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //  var foldername = paramlist[0];
 //  alert(foldername);
@@ -59,7 +59,7 @@ ecms.CreateNewArticle = function CreateNewArticle (params){
 ///////////////////////////////////////////
 
 ecms.CreateNewAnnoucement = function CreateNewAnnoucement (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -77,7 +77,7 @@ ecms.CreateNewAnnoucement = function CreateNewAnnoucement (params){
 
 ///========================
 ecms.CreateNewFreeLayoutWebContent = function CreateNewFreeLayoutWebContent(params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -97,7 +97,7 @@ ecms.CreateNewFreeLayoutWebContent = function CreateNewFreeLayoutWebContent(para
 /////////////////////
 ///========================
 ecms.CreateNewKofax = function CreateNewKofax (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -113,7 +113,7 @@ ecms.CreateNewKofax = function CreateNewKofax (params){
 
 ////////////////////////////////////////////////////
 ecms.CreateNewFile = function CreateNewFile (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -131,7 +131,7 @@ ecms.CreateNewFile = function CreateNewFile (params){
 } 
 ////////////////////////////////////////////////////////
 ecms.CreateNewFilePlan = function CreateNewFilePlan (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -161,7 +161,7 @@ ecms.CreateNewFilePlan = function CreateNewFilePlan (params){
 /////////////////
 ////////////////////////////////////////////////////
 ecms.CreateNewSampleNode = function CreateNewSampleNode (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -180,7 +180,7 @@ ecms.CreateNewSampleNode = function CreateNewSampleNode (params){
 
 // Podcast
 ecms.CreateNewPodcast = function CreateNewPodcast (params){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     var paramlist = params.toString().split(",");
 //    var foldername = paramlist[0];
 //    alert(foldername);
@@ -202,7 +202,7 @@ ecms.CreateNewPodcast = function CreateNewPodcast (params){
 ////////////////////////////////////////
 // Delete node
 ecms.DeleteNode = function DeleteNode (locator){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
 //    var foldername = paramlist[0];
 //    alert(foldername);
      aWait(locator);
@@ -217,7 +217,7 @@ ecms.DeleteNode = function DeleteNode (locator){
 // ECMS searching
 //simple search
 ecms.SimpleSearch = function SimpleSearch(keyword){
-    selenium.setSpeed(speed);
+    selenium.doSetSpeed(speed);
     aWait("name=simpleSearch");
     selenium.doType("name=simpleSearch",keyword);
     selenium.doClick("//a[@id='SimpleSearch']");
