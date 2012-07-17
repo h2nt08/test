@@ -1,6 +1,6 @@
 // eXo-SeleneseJS home folder
-//var HOME = "file:///home/hainh/workspace/Projects/eXo-SeleneseJS";
-var HOME = "file:////home/SELENIUM-PLF3.5.X/workspace/download automation project/eXo-automation";
+//var HOME = "file:///home/hainh/java/eXoProjects/test/eXo-automation";
+var HOME = "file:///home/SELENIUM-PLF3.5.X/workspace/download automation project/eXo-automation";
 
 function readFile(file) {
     var createXmlHttp = function() {
