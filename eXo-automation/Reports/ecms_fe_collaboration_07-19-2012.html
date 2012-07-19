@@ -1,0 +1,2820 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>254</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>28</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" cellpadding="1" cellspacing="1" border="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">Test_FNC_ECMS_FEX_COLLABORATION_02_002_AddPrivateTagForDocument</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">Test_FNC_ECMS_FEX_COLLABORATION_02_003_AddPrivateTagForUploadFile</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">Test_FNC_ECMS_FEX_COLLABORATION_02_004_AddPublicTagForDocument</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">Test_FNC_ECMS_FEX_COLLABORATION_02_005_AddPublicTagForUploadFile</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">Test_FNC_ECMS_FEX_COLLABORATION_02_002_AddPrivateTagForDocument.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_FNC_ECMS_FEX_COLLABORATION_02_002_AddPrivateTagForDocument</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to acme site</td>
+	<td>-- Go to acme site</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/acme</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login</td>
+	<td>-- Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create document</td>
+	<td>-- Create document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>createNewArticle</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_002,FNC_ECMS_FEX_COLLABORATION_02_002</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Collaboration tab</td>
+	<td>-- Go to Collaboration tab</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag</td>
+	<td>-- Click on Tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Put tag's name</td>
+	<td>-- Put tag's name</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='names']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='names']</td>
+	<td>Private tag1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Tag form</td>
+	<td>-- Close Tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify that created tag is displayed</td>
+	<td>-- Verify that created tag is displayed</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_002 ']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_002 ']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--- verify that can edit and delete tag</td>
+	<td>--- verify that can edit and delete tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close form</td>
+	<td>-- Close form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>mary</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify that cannot see created private tag</td>
+	<td>-- verify that cannot see created private tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Remove tag</td>
+	<td>-- Remove tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@title='Private tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this tag?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close tag form</td>
+	<td>-- Close tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>link=Private tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Back to Site Explorer</td>
+	<td>-- Back to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete document</td>
+	<td>-- Delete document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_002</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Search to verify that document is not existing</td>
+	<td>-- Search to verify that document is not existing</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_002</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">Test_FNC_ECMS_FEX_COLLABORATION_02_003_AddPrivateTagForUploadFile.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_FNC_ECMS_FEX_COLLABORATION_02_003_AddPrivateTagForUploadFile</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to acme site</td>
+	<td>-- Go to acme site</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/acme</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login</td>
+	<td>-- Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Upload file</td>
+	<td>-- Upload file</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='file']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>typeAndWait</td>
+	<td>//input[@id='file']</td>
+	<td>/home/SELENIUM-PLF3.5.X/dataTest/Test_eXo.jpg</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='name']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='name']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_003</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Select uploaded file</td>
+	<td>-- Select uploaded file</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_003.jpg</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_003.jpg</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Collaboration tab</td>
+	<td>-- Go to Collaboration tab</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag</td>
+	<td>-- Click on Tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Put tag's name</td>
+	<td>-- Put tag's name</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='names']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='names']</td>
+	<td>Private tag2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Tag form</td>
+	<td>-- Close Tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify that created tag is displayed</td>
+	<td>-- Verify that created tag is displayed</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Private tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Private tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_003.jpg ']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_003.jpg ']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--- verify that can edit and delete tag</td>
+	<td>--- verify that can edit and delete tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag2']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Private tag2']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Private tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close form</td>
+	<td>-- Close form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>mary</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify that cannot see created private tag</td>
+	<td>-- verify that cannot see created private tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>link=Private tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>link=Private tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Private Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Remove tag</td>
+	<td>-- Remove tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Private tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@title='Private tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this tag?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close tag form</td>
+	<td>-- Close tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>link=Private tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>link=Private tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Back to Site Explorer</td>
+	<td>-- Back to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete document</td>
+	<td>-- Delete document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_003.jpg</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Search to verify that document is not existing</td>
+	<td>-- Search to verify that document is not existing</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_003.jpg</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">Test_FNC_ECMS_FEX_COLLABORATION_02_004_AddPublicTagForDocument.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_FNC_ECMS_FEX_COLLABORATION_02_004_AddPublicTagForDocument</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to acme site</td>
+	<td>-- Go to acme site</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/acme</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login</td>
+	<td>-- Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create document</td>
+	<td>-- Create document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>createNewArticle</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_004,FNC_ECMS_FEX_COLLABORATION_02_004</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Collaboration tab</td>
+	<td>-- Go to Collaboration tab</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag</td>
+	<td>-- Click on Tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//select[@id='tagScopes']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>//select[@id='tagScopes']</td>
+	<td>label=Public</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//option[@value='Public']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//option[@value='Public']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Put tag's name</td>
+	<td>-- Put tag's name</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='names']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='names']</td>
+	<td>Public tag1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Tag form</td>
+	<td>-- Close Tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify that created tag is displayed</td>
+	<td>-- Verify that created tag is displayed</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Public tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Public tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_004 ']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_004 ']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--- verify that can edit and delete tag</td>
+	<td>--- verify that can edit and delete tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Public tag1']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Public tag1']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Public tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Public tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close form</td>
+	<td>-- Close form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>mary</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify that can see created public tag</td>
+	<td>-- verify that can see created public tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Public tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>link=Public tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Remove tag</td>
+	<td>-- Remove tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Public tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@title='Public tag1']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this tag?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close tag form</td>
+	<td>-- Close tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>link=Public tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>link=Public tag1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Back to Site Explorer</td>
+	<td>-- Back to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete document</td>
+	<td>-- Delete document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_004</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Search to verify that document is not existing</td>
+	<td>-- Search to verify that document is not existing</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_004</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">Test_FNC_ECMS_FEX_COLLABORATION_02_005_AddPublicTagForUploadFile.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_FNC_ECMS_FEX_COLLABORATION_02_005_AddPublicTagForUploadFile</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to acme site</td>
+	<td>-- Go to acme site</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/acme</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login</td>
+	<td>-- Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Upload file</td>
+	<td>-- Upload file</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='file']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>typeAndWait</td>
+	<td>//input[@id='file']</td>
+	<td>/home/SELENIUM-PLF3.5.X/dataTest/Test_eXo.jpg</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='name']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='name']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_005</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Select uploaded file</td>
+	<td>-- Select uploaded file</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_005.jpg</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_005.jpg</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Collaboration tab</td>
+	<td>-- Go to Collaboration tab</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag</td>
+	<td>-- Click on Tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//select[@id='tagScopes']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>//select[@id='tagScopes']</td>
+	<td>label=Public</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//option[@value='Public']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//option[@value='Public']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Put tag's name</td>
+	<td>-- Put tag's name</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='names']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='names']</td>
+	<td>Public tag2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add Tags</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Tag form</td>
+	<td>-- Close Tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+	<td>-- Click on Tag cloud in Sitebar</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify that created tag is displayed</td>
+	<td>-- Verify that created tag is displayed</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Public tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Public tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_005.jpg ']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@id='UIDocumentInfo']//div[@title='FNC_ECMS_FEX_COLLABORATION_02_005.jpg ']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--- verify that can edit and delete tag</td>
+	<td>--- verify that can edit and delete tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Public tag2']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Public tag2']/following::div/img[@title='Edit Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Public tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//div[@title='Public tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close form</td>
+	<td>-- Close form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>mary</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify that can see created public tag</td>
+	<td>-- verify that can see created public tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Public tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>link=Public tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by mary</td>
+	<td>-- Login by mary</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td>-- Go to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoSiteExplorer</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Browse all drive</td>
+	<td>-- Browse all drive</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>showDrives</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to Site Management</td>
+	<td>-- Go to Site Management</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoElement</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click on Tag cloud</td>
+	<td>-- Click on Tag cloud</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Tag Cloud']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Open form to edit tag</td>
+	<td>-- Open form to edit tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='Edit Public Tags']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Remove tag</td>
+	<td>-- Remove tag</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Public tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@title='Public tag2']/following::div/img[@title='Remove Tag']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this tag?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close tag form</td>
+	<td>-- Close tag form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//a[@title='Close Window']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>link=Public tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>link=Public tag2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Back to Site Explorer</td>
+	<td>-- Back to Site Explorer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='UISideBar']//div[@title='File Explorer']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete document</td>
+	<td>-- Delete document</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>deleteNode</td>
+	<td>link=FNC_ECMS_FEX_COLLABORATION_02_005.jpg</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Search to verify that document is not existing</td>
+	<td>-- Search to verify that document is not existing</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//input[@id='simpleSearch']</td>
+	<td>FNC_ECMS_FEX_COLLABORATION_02_005.jpg</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[@id='SimpleSearch']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Log out</td>
+	<td>-- Log out</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/Test_FNC_ECMS_FEX_COLLABORATION_02_002_AddPrivateTagForDocument.html
+info: Executing: |setSpeed | 500 |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |echo | -- Go to acme site |  |
+info: Executing: |open | /portal/acme |  |
+info: Executing: |echo | -- Login |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Create document |  |
+info: Executing: |createNewArticle | FNC_ECMS_FEX_COLLABORATION_02_002,FNC_ECMS_FEX_COLLABORATION_02_002 |  |
+info: doCreateNewArticle
+info: Executing: |echo | -- Go to Collaboration tab |  |
+info: Executing: |waitForElementPresent | link=Collaboration |  |
+info: Executing: |click | link=Collaboration |  |
+info: Executing: |echo | -- Click on Tag |  |
+info: Executing: |waitForElementPresent | link=Tag |  |
+info: Executing: |click | link=Tag |  |
+info: Executing: |echo | -- Put tag&apos;s name |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;names&apos;] |  |
+info: Executing: |type | //input[@id=&apos;names&apos;] | Private tag1 |
+info: Executing: |waitForElementPresent | link=Add Tags |  |
+info: Executing: |click | link=Add Tags |  |
+info: Executing: |echo | -- Close Tag form |  |
+info: Executing: |waitForElementPresent | link=Close |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |echo | -- Click on Tag cloud in Sitebar |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Verify that created tag is displayed |  |
+info: Executing: |waitForElementPresent | link=Private tag1 |  |
+info: Executing: |click | link=Private tag1 |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_002 &apos;] |  |
+info: Executing: |verifyElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_002 &apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |echo | --- verify that can edit and delete tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Private tag1&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Private tag1&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Private tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Private tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |echo | -- Close form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | mary | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- verify that cannot see created private tag |  |
+info: Executing: |waitForElementNotPresent | link=Private tag1 |  |
+info: Executing: |verifyElementNotPresent | link=Private tag1 |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |echo | -- Remove tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Private tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |click | //div[@title=&apos;Private tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |assertConfirmation | Are you sure to delete this tag? |  |
+info: Executing: |echo | -- Close tag form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |waitForElementNotPresent | link=Private tag1 |  |
+info: Executing: |verifyElementNotPresent | link=Private tag1 |  |
+info: Executing: |echo | -- Back to Site Explorer |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |echo | -- Delete document |  |
+info: Executing: |deleteNode | link=FNC_ECMS_FEX_COLLABORATION_02_002 |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | -- Search to verify that document is not existing |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;simpleSearch&apos;] |  |
+info: Executing: |type | //input[@id=&apos;simpleSearch&apos;] | FNC_ECMS_FEX_COLLABORATION_02_002 |
+info: Executing: |waitForElementPresent | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |click | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |waitForTextPresent | No results found. |  |
+info: Executing: |verifyTextPresent | No results found. |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_FNC_ECMS_FEX_COLLABORATION_02_003_AddPrivateTagForUploadFile.html
+info: Executing: |setSpeed | 500 |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |echo | -- Go to acme site |  |
+info: Executing: |open | /portal/acme |  |
+info: Executing: |echo | -- Login |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Upload file |  |
+info: Executing: |waitForElementPresent | link=Upload |  |
+info: Executing: |click | link=Upload |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;file&apos;] |  |
+info: Executing: |typeAndWait | //input[@id=&apos;file&apos;] | /home/SELENIUM-PLF3.5.X/dataTest/Test_eXo.jpg |
+info: Executing: |waitForElementPresent | //input[@id=&apos;name&apos;] |  |
+info: Executing: |type | //input[@id=&apos;name&apos;] | FNC_ECMS_FEX_COLLABORATION_02_003 |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForElementPresent | link=Close |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |echo | -- Select uploaded file |  |
+info: Executing: |waitForElementPresent | link=FNC_ECMS_FEX_COLLABORATION_02_003.jpg |  |
+info: Executing: |click | link=FNC_ECMS_FEX_COLLABORATION_02_003.jpg |  |
+info: Executing: |echo | -- Go to Collaboration tab |  |
+info: Executing: |waitForElementPresent | link=Collaboration |  |
+info: Executing: |click | link=Collaboration |  |
+info: Executing: |echo | -- Click on Tag |  |
+info: Executing: |waitForElementPresent | link=Tag |  |
+info: Executing: |click | link=Tag |  |
+info: Executing: |echo | -- Put tag&apos;s name |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;names&apos;] |  |
+info: Executing: |type | //input[@id=&apos;names&apos;] | Private tag2 |
+info: Executing: |waitForElementPresent | link=Add Tags |  |
+info: Executing: |click | link=Add Tags |  |
+info: Executing: |echo | -- Close Tag form |  |
+info: Executing: |waitForElementPresent | link=Close |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |echo | -- Click on Tag cloud in Sitebar |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Verify that created tag is displayed |  |
+info: Executing: |waitForElementPresent | link=Private tag2 |  |
+info: Executing: |click | link=Private tag2 |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_003.jpg &apos;] |  |
+info: Executing: |verifyElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_003.jpg &apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |echo | --- verify that can edit and delete tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Private tag2&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Private tag2&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Private tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Private tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |echo | -- Close form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | mary | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- verify that cannot see created private tag |  |
+info: Executing: |waitForElementNotPresent | link=Private tag2 |  |
+info: Executing: |verifyElementNotPresent | link=Private tag2 |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Private Tags&apos;] |  |
+info: Executing: |echo | -- Remove tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Private tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |click | //div[@title=&apos;Private tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |assertConfirmation | Are you sure to delete this tag? |  |
+info: Executing: |echo | -- Close tag form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |waitForElementNotPresent | link=Private tag2 |  |
+info: Executing: |verifyElementNotPresent | link=Private tag2 |  |
+info: Executing: |echo | -- Back to Site Explorer |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |echo | -- Delete document |  |
+info: Executing: |deleteNode | link=FNC_ECMS_FEX_COLLABORATION_02_003.jpg |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | -- Search to verify that document is not existing |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;simpleSearch&apos;] |  |
+info: Executing: |type | //input[@id=&apos;simpleSearch&apos;] | FNC_ECMS_FEX_COLLABORATION_02_003.jpg |
+info: Executing: |waitForElementPresent | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |click | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |waitForTextPresent | No results found. |  |
+info: Executing: |verifyTextPresent | No results found. |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_FNC_ECMS_FEX_COLLABORATION_02_004_AddPublicTagForDocument.html
+info: Executing: |setSpeed | 500 |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |echo | -- Go to acme site |  |
+info: Executing: |open | /portal/acme |  |
+info: Executing: |echo | -- Login |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Create document |  |
+info: Executing: |createNewArticle | FNC_ECMS_FEX_COLLABORATION_02_004,FNC_ECMS_FEX_COLLABORATION_02_004 |  |
+info: doCreateNewArticle
+info: Executing: |echo | -- Go to Collaboration tab |  |
+info: Executing: |waitForElementPresent | link=Collaboration |  |
+info: Executing: |click | link=Collaboration |  |
+info: Executing: |echo | -- Click on Tag |  |
+info: Executing: |waitForElementPresent | link=Tag |  |
+info: Executing: |click | link=Tag |  |
+info: Executing: |waitForElementPresent | //select[@id=&apos;tagScopes&apos;] |  |
+info: Executing: |select | //select[@id=&apos;tagScopes&apos;] | label=Public |
+info: Executing: |waitForElementPresent | //option[@value=&apos;Public&apos;] |  |
+info: Executing: |click | //option[@value=&apos;Public&apos;] |  |
+info: Executing: |echo | -- Put tag&apos;s name |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;names&apos;] |  |
+info: Executing: |type | //input[@id=&apos;names&apos;] | Public tag1 |
+info: Executing: |waitForElementPresent | link=Add Tags |  |
+info: Executing: |click | link=Add Tags |  |
+info: Executing: |echo | -- Close Tag form |  |
+info: Executing: |waitForElementPresent | link=Close |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |echo | -- Click on Tag cloud in Sitebar |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Verify that created tag is displayed |  |
+info: Executing: |waitForElementPresent | link=Public tag1 |  |
+info: Executing: |click | link=Public tag1 |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_004 &apos;] |  |
+info: Executing: |verifyElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_004 &apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |echo | --- verify that can edit and delete tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Public tag1&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Public tag1&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Public tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Public tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |echo | -- Close form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | mary | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- verify that can see created public tag |  |
+info: Executing: |waitForElementPresent | link=Public tag1 |  |
+info: Executing: |verifyElementPresent | link=Public tag1 |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |echo | -- Remove tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Public tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |click | //div[@title=&apos;Public tag1&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |assertConfirmation | Are you sure to delete this tag? |  |
+info: Executing: |echo | -- Close tag form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |waitForElementNotPresent | link=Public tag1 |  |
+info: Executing: |verifyElementNotPresent | link=Public tag1 |  |
+info: Executing: |echo | -- Back to Site Explorer |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |echo | -- Delete document |  |
+info: Executing: |deleteNode | link=FNC_ECMS_FEX_COLLABORATION_02_004 |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | -- Search to verify that document is not existing |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;simpleSearch&apos;] |  |
+info: Executing: |type | //input[@id=&apos;simpleSearch&apos;] | FNC_ECMS_FEX_COLLABORATION_02_004 |
+info: Executing: |waitForElementPresent | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |click | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |waitForTextPresent | No results found. |  |
+info: Executing: |verifyTextPresent | No results found. |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_FNC_ECMS_FEX_COLLABORATION_02_005_AddPublicTagForUploadFile.html
+info: Executing: |setSpeed | 500 |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |echo | -- Go to acme site |  |
+info: Executing: |open | /portal/acme |  |
+info: Executing: |echo | -- Login |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Upload file |  |
+info: Executing: |waitForElementPresent | link=Upload |  |
+info: Executing: |click | link=Upload |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;file&apos;] |  |
+info: Executing: |typeAndWait | //input[@id=&apos;file&apos;] | /home/SELENIUM-PLF3.5.X/dataTest/Test_eXo.jpg |
+info: Executing: |waitForElementPresent | //input[@id=&apos;name&apos;] |  |
+info: Executing: |type | //input[@id=&apos;name&apos;] | FNC_ECMS_FEX_COLLABORATION_02_005 |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForElementPresent | link=Close |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |echo | -- Select uploaded file |  |
+info: Executing: |waitForElementPresent | link=FNC_ECMS_FEX_COLLABORATION_02_005.jpg |  |
+info: Executing: |click | link=FNC_ECMS_FEX_COLLABORATION_02_005.jpg |  |
+info: Executing: |echo | -- Go to Collaboration tab |  |
+info: Executing: |waitForElementPresent | link=Collaboration |  |
+info: Executing: |click | link=Collaboration |  |
+info: Executing: |echo | -- Click on Tag |  |
+info: Executing: |waitForElementPresent | link=Tag |  |
+info: Executing: |click | link=Tag |  |
+info: Executing: |waitForElementPresent | //select[@id=&apos;tagScopes&apos;] |  |
+info: Executing: |select | //select[@id=&apos;tagScopes&apos;] | label=Public |
+info: Executing: |waitForElementPresent | //option[@value=&apos;Public&apos;] |  |
+info: Executing: |click | //option[@value=&apos;Public&apos;] |  |
+info: Executing: |echo | -- Put tag&apos;s name |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;names&apos;] |  |
+info: Executing: |type | //input[@id=&apos;names&apos;] | Public tag2 |
+info: Executing: |waitForElementPresent | link=Add Tags |  |
+info: Executing: |click | link=Add Tags |  |
+info: Executing: |echo | -- Close Tag form |  |
+info: Executing: |waitForElementPresent | link=Close |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |echo | -- Click on Tag cloud in Sitebar |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Verify that created tag is displayed |  |
+info: Executing: |waitForElementPresent | link=Public tag2 |  |
+info: Executing: |click | link=Public tag2 |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_005.jpg &apos;] |  |
+info: Executing: |verifyElementPresent | //div[@id=&apos;UIDocumentInfo&apos;]//div[@title=&apos;FNC_ECMS_FEX_COLLABORATION_02_005.jpg &apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |echo | --- verify that can edit and delete tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Public tag2&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Public tag2&apos;]/following::div/img[@title=&apos;Edit Tag&apos;] |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Public tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |verifyElementPresent | //div[@title=&apos;Public tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |echo | -- Close form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | mary | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- verify that can see created public tag |  |
+info: Executing: |waitForElementPresent | link=Public tag2 |  |
+info: Executing: |verifyElementPresent | link=Public tag2 |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by mary |  |
+info: Executing: |login | john | gtn |
+info: Executing: |echo | -- Go to Site Explorer |  |
+info: Executing: |gotoSiteExplorer |  |  |
+info: Executing: |echo | -- Browse all drive |  |
+info: Executing: |showDrives |  |  |
+info: Executing: |echo | -- Go to Site Management |  |
+info: Executing: |gotoElement | link=Sites Management |  |
+info: Executing: |echo | -- Click on Tag cloud |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Tag Cloud&apos;] |  |
+info: Executing: |echo | -- Open form to edit tag |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;Edit Public Tags&apos;] |  |
+info: Executing: |echo | -- Remove tag |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;Public tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |click | //div[@title=&apos;Public tag2&apos;]/following::div/img[@title=&apos;Remove Tag&apos;] |  |
+info: Executing: |assertConfirmation | Are you sure to delete this tag? |  |
+info: Executing: |echo | -- Close tag form |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UIPopupWindow&apos;]//a[@title=&apos;Close Window&apos;] |  |
+info: Executing: |waitForElementNotPresent | link=Public tag2 |  |
+info: Executing: |verifyElementNotPresent | link=Public tag2 |  |
+info: Executing: |echo | -- Back to Site Explorer |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |click | //div[@id=&apos;UISideBar&apos;]//div[@title=&apos;File Explorer&apos;] |  |
+info: Executing: |echo | -- Delete document |  |
+info: Executing: |deleteNode | link=FNC_ECMS_FEX_COLLABORATION_02_005.jpg |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | -- Search to verify that document is not existing |  |
+info: Executing: |waitForElementPresent | //input[@id=&apos;simpleSearch&apos;] |  |
+info: Executing: |type | //input[@id=&apos;simpleSearch&apos;] | FNC_ECMS_FEX_COLLABORATION_02_005.jpg |
+info: Executing: |waitForElementPresent | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |click | //a[@id=&apos;SimpleSearch&apos;] |  |
+info: Executing: |waitForTextPresent | No results found. |  |
+info: Executing: |verifyTextPresent | No results found. |  |
+info: Executing: |echo | -- Log out |  |
+info: Executing: |clickAndWait | link=Logout |  |
+</pre></body></html>
