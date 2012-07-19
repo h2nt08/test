@@ -19,6 +19,7 @@ ecms.CreateNewContentFolder = function CreateNewContentFolder (foldername){
      aWait("name=type");
      selenium.doSelect("name=type", "label=Content Folder");
      selenium.doType("id=title", foldername);
+     sleep(500);
      selenium.doType("id=name", foldername);
      selenium.doClick("link=Save");
      
@@ -32,6 +33,7 @@ ecms.CreateNewDocumentFolder = function CreateNewDocumentFolder (foldername){
      aWait("name=type");
      selenium.doSelect("name=type", "label=Document Folder");
      selenium.doType("id=title", foldername);
+     sleep(1000);
      selenium.doType("id=name", foldername);
      selenium.doClick("link=Save");
 } 
@@ -49,6 +51,7 @@ ecms.CreateNewArticle = function CreateNewArticle (params){
      aWait("id=title");
      selenium.doClick("id=title");
      selenium.doType("id=title", paramlist[0]);
+     sleep(500);
      selenium.doType("id=name", paramlist[1]);
 //   selenium.selectFrame("//td[@id='cke_contents_summary']/iframe");
 //   selenium.doType("//html/body", "xxxxxxxxxxx");
@@ -87,6 +90,7 @@ ecms.CreateNewFreeLayoutWebContent = function CreateNewFreeLayoutWebContent(para
      selenium.doClick("//div[@title='Free layout webcontent']");
      aWait("id=title");
      selenium.doType("id=title", paramlist[0]);
+     sleep(500);
      selenium.doType("id=name", paramlist[1]);
 //   selenium.selectFrame("//td[@id='cke_contents_summary']/iframe");
 //   selenium.doType("//html/body", "xxxxxxxxxxx");
