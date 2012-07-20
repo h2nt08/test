@@ -1,5 +1,5 @@
 var ecms = {};
-var speed = 500;
+var speed = 1000;
 ecms.login = function login (username, password) {
     selenium.doSetSpeed(speed);
 //    alert("testtest");
