@@ -1,6 +1,5 @@
-#export HOME_TEST="/home/SELENIUM-PLF3.5.X/workspace/DownloadECMSAutomationProjects/eXo-automation"
+export HOME_TEST="/home/SELENIUM-PLF3.5.X/workspace/DownloadECMSAutomationProjects/eXo-automation"
 echo "==============ecms_fe_basic_action======"
-export HOME_TEST="/home/hainh/java/eXoProjects/test/eXo-automation"
 cd $HOME_TEST
 export ReportName=ecms_fe_basic_action_$(date +"%m-%d-%Y").html
 pwd
