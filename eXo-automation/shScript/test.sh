@@ -1,7 +1,9 @@
-/home/SELENIUM-PLF3.5.X/workspace/shScript/ecms_fe_admin.sh
+export HOME_TEST=/home/hainh/java/eXoProjects/test/eXo-automation
+$HOME_TEST/shScript/ecms_fe_admin.sh
 echo "==========================================="
-/home/SELENIUM-PLF3.5.X/workspace/shScript/ecms_fe_info.sh
-
-/home/SELENIUM-PLF3.5.X/workspace/shScript/ecms_fe_basic_action.sh
-/home/SELENIUM-PLF3.5.X/workspace/shScript/ecms_fe_collaboration.sh
+$HOME_TEST/shScript/ecms_fe_info.sh
+echo "==========================================="
+$HOME_TEST/shScript/ecms_fe_basic_action.sh
+echo "==========================================="
+$HOME_TEST/shScript/ecms_fe_collaboration.sh
 
