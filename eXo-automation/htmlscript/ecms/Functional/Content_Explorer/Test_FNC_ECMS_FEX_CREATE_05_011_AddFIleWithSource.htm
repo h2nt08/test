@@ -37,29 +37,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put user name and pass</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=username</td>
+	<td>login</td>
 	<td>mary</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
 	<td>gtn</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Sign in</td>
-	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -72,8 +52,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Sites Explorer</td>
+	<td>gotoSiteExplorer</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -82,8 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//a[@title='Show Drives']</td>
+	<td>showDrives</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -117,58 +97,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//a[@title='New Content']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-- Choose File Template</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@title='File']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put File Name</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//input[@id='name']</td>
+	<td>createNewFile</td>
 	<td>FNC_ECMS_FEX_CREATE_05_011</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put&nbsp;&nbsp;content</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//span[text()='Source']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//td[@id='cke_contents_contentHtml']/textarea</td>
-	<td>&lt;html&gt;&lt;body&gt;&lt;p&gt;Add new text/html File document (1) &lt;/br&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Save &amp; Close</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//html//body//p[contains(text(),'Add new text/html File document ')]</td>
+	<td>//a[contains(text(),'FNC_ECMS_FEX_CREATE_05_011')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//html//body//p[contains(text(),'Add new text/html File document ')]</td>
+	<td>//a[contains(text(),'FNC_ECMS_FEX_CREATE_05_011')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -183,12 +133,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//pre[contains(text(),'&lt;html&gt;&lt;body&gt;&lt;p&gt;Add new text/html File document (1) &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;')]</td>
+	<td>//a[contains(text(),'FNC_ECMS_FEX_CREATE_05_011')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//pre[contains(text(),'&lt;html&gt;&lt;body&gt;&lt;p&gt;Add new text/html File document (1) &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;')]</td>
+	<td>//a[contains(text(),'FNC_ECMS_FEX_CREATE_05_011')]</td>
 	<td></td>
 </tr>
 <tr>

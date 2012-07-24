@@ -37,39 +37,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put user name and pass</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>name=username</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=username</td>
+	<td>login</td>
 	<td>mary</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
 	<td>gtn</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Sign in</td>
-	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -92,13 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//a[@title='Show Drives']</td>
+	<td>showDrives</td>
 	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[@title='Show Drives']</td>
 	<td></td>
 </tr>
 <tr>
@@ -137,53 +102,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//a[@title='New Folder']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[@title='New Folder']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put folder name and title</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//input[@id='title']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//input[@id='title']</td>
+	<td>createNewContentFolder</td>
 	<td>FNC_ECMS_FEX_CREATE_03_001</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//input[@id='name']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//input[@id='name']</td>
-	<td>FNC_ECMS_FEX_CREATE_03_001</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Save form</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Save</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Save</td>
 	<td></td>
 </tr>
 <tr>

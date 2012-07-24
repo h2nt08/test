@@ -37,39 +37,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put user name and pass</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>name=username</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=username</td>
+	<td>login</td>
 	<td>mary</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
 	<td>gtn</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Sign in</td>
-	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -82,8 +52,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Sites Explorer</td>
+	<td>gotoSiteExplorer</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -92,13 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//a[@title='Show Drives']</td>
+	<td>showDrives</td>
 	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[@title='Show Drives']</td>
 	<td></td>
 </tr>
 <tr>
@@ -137,108 +102,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//a[@title='New Content']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[@title='New Content']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-- Choose Article template</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@title='Article']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@title='Article']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Add title and name</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>title</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>title</td>
-	<td>FNC_ECMS_FEX_CREATE_05_003_article</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name</td>
-	<td>FNC_ECMS_FEX_CREATE_05_003_article</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Add summary</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//td[@id='cke_contents_summary']//iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>//td[@id='cke_contents_summary']//iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//html/body</td>
-	<td>the summary of Article in FNC_ECMS_FEC_Create_05</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=top</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Add content for article</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//td[@id='cke_contents_content']//iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>//td[@id='cke_contents_content']//iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//html/body/</td>
-	<td>the content of Article&nbsp;&nbsp;FNC_ECMS_FEC_Create_05</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=top</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Save &amp; Close</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Save &amp; Close</td>
+	<td>createNewArticle</td>
+	<td>FNC_ECMS_FEX_CREATE_05_003_article, FNC_ECMS_FEX_CREATE_05_003_article</td>
 	<td></td>
 </tr>
 <tr>
@@ -267,78 +137,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//a[@title='New Content']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[@title='New Content']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-- Choose File Template</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@title='File']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@title='File']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put File Name</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//input[@id='name']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//input[@id='name']</td>
+	<td>createNewFile</td>
 	<td>FNC_ECMS_FEX_CREATE_05_003_File</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Put content</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//td[@id='cke_contents_contentHtml']/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>//td[@id='cke_contents_contentHtml']/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>typeKeys</td>
-	<td>//html/body</td>
-	<td>File created in FNC_ECMS_FEX_CREATE_05_003</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=top</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Save &amp; Close</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Save &amp; Close</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
