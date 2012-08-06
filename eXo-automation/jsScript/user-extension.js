@@ -21,19 +21,14 @@ Selenium.prototype.doGetExoExtensionVersion = function(){
 Selenium.prototype.doTypeFCKEditor = function(locator, text) {
 	    // All locator-strategies are automatically handled by "findElement"
 	    var editor = this.page().findElement(locator);
-	    alert("ttttttttt");
+	    
 	    // TODO: use contentWindow instead of contentDocument for IE
 	    var innerEditor = null;
-	    if (editor.contentDocument){
+	    if (editor.contentDocument)
 	    	innerEditor = editor.contentDocument.getElementsByTagName("iframe")[0];
-		alert("test");
-		alert(innerEditor);
-		}
-	    else if (editor.contentWindow){
-		alert("no");
+	    else if (editor.contentWindow)
 	    	innerEditor = editor.contentWindow.document.getElementsByTagName("iframe")[0];
-	    }
-alert("yese");
+	    
 	    if (innerEditor)
 	      innerEditor.contentDocument.body.innerHTML = text;
 	    // Replace the element text with the new text

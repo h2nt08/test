@@ -3,11 +3,17 @@ Selenium.prototype.doWait = function wait(locator, timeout){
     return wait(locator, function(){}, parseInt(timeout));
 }
             
-//Selenium.prototype.doLogin = function(username, password){
-//    return wait(Menu.SignIn, function (){
-//        exo.login(username, password);
-//    });
-//}
+Selenium.prototype.doLogin = function(username, password){
+    return wait(Menu.SignIn, function (){
+        exo.Login(username, password);
+    });
+}
+
+Selenium.prototype.doLoginDiscardGTN = function(username, password){
+    return wait(Menu.SignIn, function (){
+        exo.LoginDiscardGTN(username, password);
+    });
+}
 
 Selenium.prototype.doPrepareDashboard = function() {
     return wait(Menu.Dashboard, function prepareDashboard_DashboardLinkFound(){
@@ -45,16 +51,111 @@ Selenium.prototype.doTestCalculatorGadget = function(alertResult) {
     });
 }
 
-//=========================================
-// ECMS
-//
-Selenium.prototype.doLogin = function(username, password){
-    return wait("link=Login", function (){
-//        alert("doLogin entry");
-        ecms.login(username, password);
+Selenium.prototype.doGotoPortalSites = function(username, password){
+    return wait(Menu.SignOut, function (){
+        exo.GotoPortalSites(username, password);
     });
 }
 
+Selenium.prototype.doCreateNewUserAccount = function(usernamePassEmail){
+    return wait(UserAccount.LocationUserAccount, function (){
+        exo.CreateNewUserAccount(usernamePassEmail);
+    });
+}
+
+Selenium.prototype.doDeletePortalGadget = function(){
+    return wait(PortaGadget.LinkMaximize, function deletePortalGadget_linkMaxfound(){
+        exo.DeletePortalGadget();
+    });
+}
+
+Selenium.prototype.doVerifyTextInFrame = function(){
+    return wait("//iframe[contains(@id,'remote_iframe_')]", function VerifyTextInFrame_Textfound(){
+        exo.VerifyTextInFrame();
+    });
+}
+
+Selenium.prototype.doBreakOutOfFrame = function(){
+    return wait(function BreakOutOfFrame_OutOfFrame(){
+        exo.BreakOutOfFrame();
+    });
+}
+
+
+//=========================================
+// ECMS
+// User login
+/*Selenium.prototype.doLogin = function(username, password){
+    return wait("Menu.SignIn", function (){
+        ecms.login(username, password);
+    });
+}*/
+
+// Import all applications on page editor
+Selenium.prototype.doImportApplications = function(){
+    return wait(Menu.Applications, function importApplications_AppLinkFound(){
+        ecms.importApplications();
+    });    
+}
+
+// Create new page empty layout
+Selenium.prototype.doCreateNewPageEmptyLayout = function(name){
+    return wait("link=Add Page", function(){
+         LOG.info("doCreateNewPageEmptyLayout");
+         ecms.CreateNewPageEmptyLayout(name);
+        
+    });   
+}
+
+// Create new page with layout
+Selenium.prototype.doCreateNewPageWithLayout = function(name,number){
+    return wait("link=Add Page", function(){
+         LOG.info("doCreateNewPageWithLayout");
+         ecms.CreateNewPageWithLayout(name, number);
+        
+    });   
+}
+
+// Add Content Module
+Selenium.prototype.doAddContentDetailEmptyLayout = function(){
+    return wait(ApplicationsPageEditor.Content, function addContentDetailEmptyLayout_ContentDetailModuleFound(){
+        ecms.AddContentDetailEmptyLayout();
+    }); 
+}
+
+Selenium.prototype.doAddContentDetail = function(){
+    return wait(ApplicationsPageEditor.Content, function addContentDetail_ContentDetailModuleFound(){
+        ecms.AddContentDetail();
+    }); 
+}
+
+Selenium.prototype.doAddContentListEmptyLayout = function(){
+    return wait(ApplicationsPageEditor.Content, function addContentListEmptyLayout_ContentListModuleFound(){
+        ecms.AddContentListEmptyLayout();
+    }); 
+}
+
+Selenium.prototype.doAddContentList = function(){
+    return wait(ApplicationsPageEditor.Content, function addContentList_ContentListModuleFound(){
+        ecms.AddContentList();
+    }); 
+}
+
+// Select Content Detail Path
+
+Selenium.prototype.doSelectContentPath = function(){
+    return wait(EditPortlet.ClickIcon, function selectContentPath_ContentPathFound(){
+        ecms.SelectContentPath();
+    }); 
+}
+// Select CLV Path
+Selenium.prototype.doSelectCLVPath = function(inputMode){
+    return wait(EditPortlet.ClickIcon, function(){
+        ecms.SelectCLVPath(inputMode);
+    }); 
+}
+
+///////////////////////////////////////////////////////////////////////
 Selenium.prototype.doCreateNewContentFolder = function(name){
     return wait("link=New Folder", function(){
         LOG.info("doCreateNewContentFolder");
@@ -77,7 +178,7 @@ Selenium.prototype.doCreateNewArticle = function(params){
         ecms.CreateNewArticle(params);
     });
 }
-
+  
 // new Annoucement
 Selenium.prototype.doCreateNewAnnoucement = function(params){
     return wait("link=New Content", function(){
@@ -130,6 +231,15 @@ Selenium.prototype.doCreateNewPodcast = function(params){
     });
 }
 
+// CreateNewProduct 
+Selenium.prototype.doCreateNewProduct = function(params){
+    return wait("link=New Content", function(){
+        LOG.info("doCreateNewProduct");
+        ecms.CreateNewProduct(params);
+    });
+}
+
+
 // simple search
 Selenium.prototype.doSimpleSearch = function(keyword){
     return wait("name=simpleSearch", function(){
@@ -138,10 +248,25 @@ Selenium.prototype.doSimpleSearch = function(keyword){
     });
 }
 
+//CreateNewPictureOnHeadLayout
+Selenium.prototype.doCreateNewPictureOnHeadLayout = function(params){
+    return wait("link=New Content", function(){
+        LOG.info("doCreateNewPictureOnHeadLayout");
+        ecms.CreateNewPictureOnHeadLayout(params);
+    });
+}
 // DeleteNode
 Selenium.prototype.doDeleteNode = function(locator){
     return wait(locator, function(){
 //        LOG.info("doCreateNewSampleNode");
         ecms.DeleteNode(locator);
+    });
+}
+
+//EditInContentExplorer
+Selenium.prototype.doEditInContentExplorer = function(){
+    return wait(EditInCE.contentLink, function EditInContentExplorer_LinkFound(){
+        LOG.info("doEditInContentExplorer");
+        ecms.EditInContentExplorer();
     });
 }

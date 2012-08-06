@@ -1,6 +1,5 @@
-// eXo-SeleneseJS home folder
-//var HOME = "file:///home/hainh/java/eXoProjects/test/eXo-automation";
-var HOME = "file:///home/SELENIUM-PLF3.5.X/workspace/DownloadECMSAutomationProjects/eXo-automation";
+//exo-automation home folder
+var HOME = "file:///home/vuna2/java/exo-working/test/eXo-automation";
 
 function readFile(file) {
     var createXmlHttp = function() {
@@ -29,14 +28,15 @@ function readFile(file) {
     } catch(e) {
         return null;
     }
-}
+}   
 
 eval(readFile(HOME + "/jsScript/lib/strands.js"));
 eval(readFile(HOME + "/jsScript/lib/utils.js"));
-eval(strands.compiler.compile(readFile(HOME + "/jsScript/exogtn/exo-common.js")));
-eval(strands.compiler.compile(readFile(HOME + "/jsScript/ecms/exo-ecms.js")));
 eval(readFile(HOME + "/jsScript/exo-selenese.js"));
+eval(strands.compiler.compile(readFile(HOME + "/jsScript/exogtn/exo-common.js")));
 eval(readFile(HOME + "/jsScript/exogtn/data-gatein.js"));
+//eval(strands.compiler.compile(readFile(HOME + "/jsScript/ecms/exo-ecms.js")));
+//eval(readFile(HOME + "/jsScript/ecms/data-ecms.js"));
 
 
 

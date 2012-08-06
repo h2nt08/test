@@ -2,8 +2,9 @@
 
 /************* UI DATA FOR GATEIN *************/
 Menu = {
-    SignIn: "link=Sign in",
-    SignOut: "link=Sign out",
+    //SignIn: "link=Sign in",
+    SignIn: "//b[contains(text(),'Sign in')]",
+    SignOut: "link=Logout",
     ApplicationRegistry: "link=Application Registry",
     Dashboard: "link=Dashboard"
 }
@@ -11,7 +12,8 @@ Menu = {
 LoginForm = {
     UserNameField: "name=username",
     PasswordField: "name=password",
-    SigninButton: "name=signIn"
+    SigninButton:  "link=Sign in",
+    DiscardButton: "link=Discard"
 };
 
 ApplicationRegistry = {
@@ -30,4 +32,25 @@ CalculatorGadget = {
     LocationInDashboard: "css=span.GadgetTitle:contains(\"Calculator\")",
     DisplayField: "css=div.Display input#calculator",
     CloseButton: "css=span.CloseGadget.IconControl"
+}
+
+PortalSites = {
+    LocationPortalSite: "link=Sites"
+}
+
+UserAccount = {
+    LocationUserAccount:    "link=Add Users",
+    LocationUsername:       "id=username",
+    LocationPassword:       "password",
+    LocationConfirmationPass:   "Confirmpassword",
+    LocationFirstname:      "firstName",
+    LocationLastname:       "lastName",
+    LocationEmail:          "email",
+    LocationLinkSave:       "link=Save"
+}
+
+PortaGadget = {
+    LinkMaximize: "css=span.MaximizeGadget.IconControl",
+    LinkDeleteGadget: "css=span.CloseGadget.IconControl"
+    
 }

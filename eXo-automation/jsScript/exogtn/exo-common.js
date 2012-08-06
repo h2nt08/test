@@ -1,7 +1,10 @@
 /************************************ COMMON FUNCTIONS *******************************/
 var exo = {};
 
-exo.login = function login(username, password){
+//Exo
+//User login
+
+exo.Login = function Login(username, password){
     aWait(Menu.SignIn);
     selenium.doClick(Menu.SignIn);
     aWait(LoginForm.UserNameField);
@@ -9,6 +12,33 @@ exo.login = function login(username, password){
     selenium.doType(LoginForm.PasswordField, password);
     selenium.doClick(LoginForm.SigninButton);
 }
+exo.LoginDiscardGTN = function LoginDiscardGTN(username, password){
+    aWait(Menu.SignIn);
+    selenium.doClick(Menu.SignIn);
+    aWait(LoginForm.UserNameField);
+    selenium.doType(LoginForm.UserNameField, username);
+    selenium.doType(LoginForm.PasswordField, password);
+    sleep(3000);
+    selenium.doClick(LoginForm.DiscardButton);
+}
+
+exo.GotoPortalSites = function GotoPortalSites(username, password){
+    aWait(Menu.SignOut);
+    selenium.doClick(Menu.SignOut);
+    //sleep(1000);
+    aWait(Menu.SignIn);
+    selenium.doClick(Menu.SignIn);
+    aWait(LoginForm.UserNameField);
+    selenium.doType(LoginForm.UserNameField, username);
+    selenium.doType(LoginForm.PasswordField, password);
+    selenium.doClick(LoginForm.SigninButton);
+    //sleep(10000);
+    aWait(PortalSites.LocationPortalSite);
+    selenium.doClick(PortalSites.LocationPortalSite);
+    //sleep(1000);
+}
+
+//=======================================================//
 
 exo.logout = function logout(){
     aWait(Menu.SignOut);
@@ -68,4 +98,65 @@ exo.testCalculatorGadget = function testCalculatorGadget(alertResult) {
     }
 }
 
+//============== Create new user account ===================//
+exo.CreateNewUserAccount = function CreateNewUserAccount(usernamePassEmail){
+    var namelist = usernamePassEmail.toString().split(",");
+    aWait(UserAccount.LocationUserAccount);
+    selenium.doClick(UserAccount.LocationUserAccount);   
+    aWait(UserAccount.LocationUsername);
+    selenium.doType(UserAccount.LocationUsername, namelist[0]);
+    aWait(UserAccount.LocationPassword);
+    selenium.doType(UserAccount.LocationPassword, namelist[1]);
+    aWait(UserAccount.LocationConfirmationPass);
+    selenium.doType(UserAccount.LocationConfirmationPass, namelist[1]);
+    aWait(UserAccount.LocationFirstname);
+    selenium.doType(UserAccount.LocationFirstname, namelist[2]);
+    aWait(UserAccount.LocationLastname);
+    selenium.doType(UserAccount.LocationLastname, namelist[2]);
+    aWait(UserAccount.LocationEmail);
+    selenium.doType(UserAccount.LocationEmail, namelist[3]);
+    aWait(UserAccount.LocationLinkSave);
+    selenium.doClick(UserAccount.LocationLinkSave);
+    
+}
+//=============== Verify text present ===================//
+exo.VerifyTextInFrame = function VerifyTextInFrame(){
+    aWait("//iframe[contains(@id,'remote_iframe_')]");
+    selenium.doSelectFrame("//iframe[contains(@id,'remote_iframe_')]");
+    //verifyTextPresent
+    selenium.isTextPresent("the url: http://google.com is down or invalid");
+    //selenium.doVerifyTextPresent
+}
 
+
+
+//================ Delete gadget========================//
+exo.DeletePortalGadget = function DeletePortalGadget(){
+    aWait(PortaGadget.LinkMaximize);
+    selenium.doClick(PortaGadget.LinkMaximize);
+    sleep(10000);
+    aWait(PortaGadget.LinkDeleteGadget);
+    selenium.doClick(PortaGadget.LinkDeleteGadget);
+}
+
+
+//=============== Delete node portal ===================//
+
+exo.DeletePortal = function DeletePortal(portalName){
+    var namelist = portalName.toString().split(",");
+    //aWait(GotoSiteExplorer);
+    selenium.doGotoSiteExplorer();
+    sleep(10000);
+    //waitForElementPresent
+    //mouseDownRight css=a[title='test ']
+    //waitForElementPresent link=Delete
+    //pause 60000
+    
+}
+
+exo.BreakOutOfFrame = function BreakOutOfFrame(){ 
+    if(this != top)
+            top.location.href = this.location.href;
+    //else if(this != top)
+      //      top.document.location.href = this.document.location.href;
+}
